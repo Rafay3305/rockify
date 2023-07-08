@@ -118,21 +118,24 @@ a{
 .list{
     list-style: none;
     padding-left: 0;
-
 }
+
 .list--inline .list__item{
 display: inline-block;
 margin-right: 2rem;
 }
+
 .list--tick{
     list-style-image: url(../images/tick.svg);
     padding-left: 3rem;
     color: var(--color-headings);
 }
+
 .list--tick .list__item{
     padding-left: 0.5rem;
     margin-bottom: 1rem;
 }
+
 @media screen and (min-width:1024px) {
     .list--tick .list__item{
         padding-left: 0;
@@ -267,6 +270,7 @@ display: flex;
     border: 0;
     flex-grow: 1;
     padding: 1.5rem 2rem;
+    width: 0;
 }
 
 .input-group .btn{
@@ -485,6 +489,10 @@ display: flex;
     right: -32px;
 }
 
+.testimonial .quote{
+    font-size: 110%;
+}
+
 
 
 @media screen and (min-width:768px) {
@@ -506,6 +514,7 @@ display: flex;
 .callout--primary{
     background: var(--color-primary);
     color: white;
+    transform: translateY(50px);
 }
 
 .callout__heading{
@@ -707,8 +716,9 @@ opacity: 1;
 }
 
 .block-domain__prices{
+    color: var(--color-headings);
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 6rem);
     font-size: 2rem;
     font-weight: 600;
